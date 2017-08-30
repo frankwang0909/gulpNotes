@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./build/css/datepicker.css">
+</head>
+<body>
+    <h1>日历组件</h1>
+    <div class="cal-left">
+        <div class="cal-years">
+            <button class="cal-prev">&lt;</button>
+            <span class="cal-year">2017</span>
+            <button class="cal-next">&gt;</button>
+        </div>
+        <ul class="cal-months">
+            <li><a href="javascript:;" data-m="1"><span>January</span>1</a></li>
+            <li><a href="javascript:;" data-m="2"><span>February</span>2</a></li>
+            <li><a href="javascript:;" data-m="3"><span>March</span>3</a></li>
+            <li><a href="javascript:;" data-m="4"><span>April</span>4</a></li>
+            <li><a href="javascript:;" data-m="5"><span>May</span>5</a></li>
+            <li><a href="javascript:;" data-m="6"><span>June</span>6</a></li>
+            <li><a href="javascript:;" data-m="7"><span>July</span>7</a></li>
+            <li><a href="javascript:;" data-m="8" class="active"><span>August</span>8</a></li>
+            <li><a href="javascript:;" data-m="9"><span>September</span>9</a></li>
+            <li><a href="javascript:;" data-m="10"><span>October</span>10</a></li>
+            <li><a href="javascript:;" data-m="11"><span>November</span>11</a></li>
+            <li><a href="javascript:;" data-m="12"><span>December</span>12</a></li>
+        </ul>
+    </div>
+    <div class="ui-datepicker-wrapper cal-body">
+    </div>
+    <script type="text/javascript" src="./build/js/all.min.js"></script>
+    <script type="text/javascript">
+        // var data = datepicker.getMonthData();
+        // console.log(data);
+
+        datepicker.init();
+    </script>
+</body>
+</html>

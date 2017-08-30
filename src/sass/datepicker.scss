@@ -1,0 +1,52 @@
+//colors
+$color_gallery_approx: #eee;
+$color_mercury_approx: #e6e6e6;
+$color_chablis_approx: #fef3f3;
+$black: #000;
+
+.ui-datepicker-wrapper {
+	width: 460px;
+	text-align: center;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 2px 2px 8px 2px $color_gallery_approx;
+}
+.ui-datepicker-header {
+	font-size: 0;
+	height: 42px;
+	line-height: 42px;
+	background: $color_mercury_approx;
+}
+.ui-datepicker-curr-month {
+	display: inline-block;
+	width: 40%;
+	font-size: 18px;
+}
+.ui-datepicker-btn {
+	display: inline-block;
+	width: 30%;
+	font-size: 18px;
+	text-decoration: none;
+}
+.ui-datepicker-body table {
+	width: 100%;
+	line-height: 30px;
+	border-collapse: collapse;
+	th {
+		border: 1px solid $color_chablis_approx;
+	}
+	td {
+		cursor: pointer;
+		border: 1px solid $color_chablis_approx;
+		a {
+			display: block;
+			text-decoration: none;
+			color: $black;
+			&.prev {
+				color: $color_gallery_approx;
+			}
+			&.next {
+				color: $color_gallery_approx;
+			}
+		}
+	}
+}
